@@ -2,9 +2,9 @@ require 'pry'
 
 def my_all?(collection)
  i = 0
- answer = [] 
+ block_return_values = [] 
   while i < collection.length
-    answer << yield(collection[i])
+    block_return_values << yield(collection[i])
     i = i + 1
   end
   
